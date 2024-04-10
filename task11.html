@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selector Demo</title>
+  <style>
+
+    /* Universal Selector */
+    /* * {
+      margin: 0;
+      padding: 0; 
+    }  */
+
+    /* Element Selector */
+    p {
+      font-size: 18px;
+    }
+
+    /* Class Selector */
+    .highlight {
+      background-color: yellow;
+    }
+
+    /* ID Selector */
+    #header {
+      font-weight: bold;
+    }
+
+    /* Attribute Selector */
+    input[type="text"] {
+      border: 1px solid #ccc;
+    }
+
+    ul > li {
+        list-style: none;
+    }
+
+    /* Descendant Selector */
+    div p {
+      color: blue;
+    }
+
+    /* Adjacent Sibling Selector */
+    h2 + p {
+      font-style: italic;
+      color: green;
+    }
+
+    /* Pseudo-class Selector */
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Pseudo-element Selector */
+    .txt p::first-line {
+      font-size: 40px;
+      color: purple;
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    <p>This is a paragraph with <a href="#">a link</a>.</p>
+  </div>
+
+  <p class="highlight">This paragraph has a highlight class.</p>
+
+  <p id="header">This paragraph has an ID of 'header'.</p>
+
+  <input type="text" placeholder="Type something here">
+
+  <div>
+    <p>This is a paragraph inside a div.</p>
+  </div>
+
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+  </ul>
+  
+  <h2>Title</h2>
+  <div class="txt">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dignissimos saepe expedita facere sunt. Aut temporibus expedita sit eligendi maxime sequi deleniti, repellat possimus labore libero eos quasi distinctio. Optio quibusdam mollitia ipsum doloremque. </p>
+</div>
+</body>
+</html>
